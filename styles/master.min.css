@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #364f6b;
+  text-shadow: 3px 3px 0px #fff, 4px 4px 0px #364f6b;
+}
+
+.wrapper {
+  background-color: #fff;
+  border: 2px solid #364f6b;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid #364f6b;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background-color: #ebebeb;
+}
+
+#qrcode {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Hover Effects */
+
+input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.wrapper:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper:hover input[type="text"] {
+  background-color: #ebebeb;
+}
+
+.wrapper:hover #qrcode {
+  filter: brightness(75%);
+}
